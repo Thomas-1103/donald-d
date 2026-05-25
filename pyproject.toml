@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "donald-d"
+version = "0.1.0"
+description = "Visualise transformer hidden states with diffusion ellipsoids"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Thomas Fabian", email = "thomas.fabian@tu-darmstadt.de"}
+]
+keywords = [
+  "transformers",
+  "bert",
+  "visualization",
+  "nlp",
+  "embeddings",
+  "huggingface"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+  "scipy>=1.11",
+  "torch>=2.0",
+  "transformers>=4.40",
+]
+
+[project.urls]
+Homepage = "https://github.com/Thomas-1103/donald-d"
+
+[project.scripts]
+donald-d = "donald_d.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
