@@ -4,27 +4,19 @@ Visualise transformer hidden states using structure tensors and diffusion ellips
 
 
 
-Installation via:
-
-
-
-```bash
+## Installation
 
 pip install donald-d
 
+
+
 ## Quick Start
 
-from donald\_d import DONALD\_D
+from donald_d import DONALD_D
+
+DONALD_D("The quick brown fox jumps over the lazy dog.", model_name="bert-base-uncased")
 
 
-
-DONALD\_D(
-
-&#x20;   "The quick brown fox jumps over the lazy dog.",
-
-&#x20;   model\_name="bert-base-uncased"
-
-)
 
 ## Command Line Usage
 
